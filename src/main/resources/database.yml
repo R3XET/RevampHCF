@@ -1,0 +1,9 @@
+MONGODB:
+  ADDRESS: ""
+  PORT: 27017
+  DATABASE: ""
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ""
+    PASSWORD: ""
+    DATABASE: ""

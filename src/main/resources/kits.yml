@@ -1,0 +1,14 @@
+KIT_NOT_FOUND: '&cKit not found.'
+KIT_CREATED: '&aYou have successfully made the kit %kit%'
+KIT_DELETED: '&aYou have successfully delete the kit %kit%'
+KIT_ALREADY_EXIST: '&cThis kit already exist!'
+
+COMMAND_USAGE:
+  - "&6&m------------------------------------------"
+  - "&6&lKit Commands &7- &fInformation."
+  - "&e/kit (kitName) &7- &fApplies a kit to player."
+  - "&e/kit create (kitName) &7- &fCreates a kit."
+  - "&e/kit delete (kitName) &7- &fDeletes a kit."
+  - "&e/kit setinventory (kitName) &fSets the items of a kit."
+  - "&e/kit reload &7- &fReload configuration a kit."
+  - "&6&m------------------------------------------"

@@ -1,0 +1,141 @@
+# 20 TICKS = 1 SECOND
+UPDATE_TICKS: 2
+##############################################################
+##                         SCOREBOARD                       ##
+##############################################################
+SCOREBOARD:
+  ##########################  TITLE  ##########################
+  TITLE: "&b&lRevampMC &8| &3Map 1"
+  #######################  KIT-MAP STATS  #####################
+  STATS: "&c&lPlayer Statistics"
+  KILLS: " &4&lKills&7&f: &c"
+  DEATHS: " &4&lDeaths&7&f: &c"
+  BALANCE: " &4&lBalance&7&f: &a$&c"
+  ########################  HCF INFO  #########################
+  TEAM-INFO: "&b&lTeam Info&7:"
+  DTR: "&b &aDTR: &e"
+  LIVES: "&b» &aLives: &c\u2764 "
+  REGEN: "&b» &a&lRegen: &c"
+  LUNAR_CLIENT: "&b&lLunar Client &f&l\ud83c\udf19"
+  GLOWSTONE: "&6&lGlowstone Mountain&f: &e"
+  REBOOT: "&4&lRebooting In &4"
+  #######################  WORLD SPAWN  #######################
+  YOUR_BALANCE: "&2&lYour Balance&7&f: &a$&f"
+  CRATES_LOCATION: "&c&lCrates&7: &e"
+  CRATES_DISTANCE: "&6Crates Distance » "
+  COW_LOCATION: "&f&lCows&7: &e"
+  COW_DISTANCE: "&6Cow Distance » "
+  ########################  WORLD END  ########################
+  END_EXIT: "&5&lEnd Exit: &d"
+  END_EXIT_DISTANCE: "&dDistance » "
+  #########################  SALES  ###########################
+  KEYSALE: "&e&lKey-Sale&f:"
+  SALE: "&c&lStore Discount&f: &c"
+  ########################  ABILITIES  ########################
+  COBWEB: "&6&lCobweb&f: &e"
+  PYRO: "&4&lPyro&f: &e"
+  BLOCKEGG: "&6&lBlock Egg&f: &e"
+  SECOND_CHANCE: "&d&lSecond Chance&f: &e"
+  ROCKET: "&2&lRocket&f: &e"
+  SWITCHEREGG: "&6&lSwitcher Egg&f: &e"
+  FREEZEGUN: "&f&lFreeze Gun&f: &e"
+  PUMPKIN-SWAPPER: "&2&lPumpkin Swapper&f: &e"
+  INVISIBILITY: "&3&lInvisibility&f: &e"
+  NINJA: "&e&lNinja&f: &e"
+  SNOWBALL: "&b&lSnowball&f: &e"
+  DISARMER-AXE: "&c&lDisarmer Axe&f: &e"
+  GRAPPLINGHOOK: "&6&lGrappling Hook&f: &e"
+  COCAINE: "&f&lCocaine&f: &e"
+  COOLDOWNBOW: "&5&lCooldown Bow&f: &e"
+  LUMBERJACK: "&6&lLumberJack Axe&f: &e"
+  PORTABLESTRENGTH: "&6&lPortable Strength&f: &e"
+  RANDOMIZER: "&9&lRandomizer&f: &e"
+  MALIGNANTEGG: "&d&lMalignant Egg&f: &e"
+  ROTATIONSTICK: "&5&lRotation Stick&f: &e"
+  ULTIMATEPEARL: "&b&lUltimate Pearl&f: &e"
+  GUARDIAN_ANGEL: "&d&lGuardian Angel&f: &e"
+  GUARDIAN_ANGEL_HEALTH: "&d&lGuardian Angel Health&f: &e"
+  ICARO_FEATHER: "&f&lIcaro Feather&f: &e"
+  ICARO_FEATHER_FALL: "&f&lIcaro Feather Fall&f: &e"
+  BEDBOMB: "&c&lBed Bomb&f: &e"
+  POCKET_BARD: "&6&lPocket Bard&f: &e"
+  ##########################  ITEMS  ##########################
+  ENDERPEARL: "&9&lEnderPearl&f: &e"
+  GAPPLE: "&6&lGolden Apple&f: &e"
+  CRAPPLE: "&c&lApple&7&f: &e"
+  GOLDEN-HEAD: "&c&lGolden Head&7&f: &e"
+  LOGOUT: "&4&lLogout&f: &e"
+  CLASS-WARMUP: "&b&lClass Warmup&f: &e"
+  HOME: "&a&lGoing to Base In &e"
+  COMBAT-TAG: "&4&lCombat Tag&f: &e"
+  PVP-TIMER: "&a&lProtection&f: &e"
+  STUCK: "&4&lKiting In &e"
+  #######################  SOTW EVENT  ########################
+  SOTW: "&aSOTW Ends In &a"
+  SOTW-PROTECTION: "&6✶ &a&lSOTW Protection: &a"
+  SOTW-ENABLED: "&6✶ &c&lSOTW Enabled &c"
+  #######################  EOTW EVENT  ########################
+  EOTW-STARTS: "&7➥ &4&lEOTW&c starts in &l"
+  EOTW-CAP: "&7➥ &4&lEOTW&c cappable in &l"
+  EOTW: "&4&lEnd Of The World&f:"
+  EOTW-KOTH: " &7➥ &c "
+  ####################  KING OF THE HILL  #####################
+  KOTH: "&b&l%koth%&7: &c"
+  ###################  KILL THE KING EVENT  ###################
+  KILLTHEKING:
+    TITLE: "&6King Event"
+    KING: "&eKing&7: &f"
+    LOCATION: "&eLocation&7: &f%"
+    PRIZE: "&ePrize&7: &f"
+  ######################  CONQUEST EVENT  #####################
+  CONQUEST: "&6&lConquest Event &7(300)"
+  CONQUEST-RED: "&c"
+  CONQUEST-GREEN: "&a"
+  CONQUEST-YELLOW: "&e"
+  CONQUEST-BLUE: "&b"
+  CONQUEST-POINTS: "&6&l%fac%&f: &f"
+  #######################  RANGER CLASS  ######################
+  RANGER: "&a&lActive Class&f: &6Ranger"
+  RANGER-STRENGTH: "&3&lStrength&f: &e"
+  RANGER-FIRE: "&3&lFire&f: &e"
+  RANGER-DEMON: "&3&lDemon&f: &e"
+  RANGER-DEMON-TIME: "&c&lDemon Time&f: &e"
+  #######################  BARD CLASS  ########################
+  BARD: "&a&lActive Class&7: &eBard"
+  BARD-ENERGY: "&e&lBard Energy&f: &e"
+  BARD-EFFECT: "&e&lBard Effect&f: &e"
+  #######################  ARCHER CLASS  #####################
+  ARCHER: "&a&lActive Class&f: &eArcher"
+  ARCHER-MARK: "&6&lArcher Mark&f: &e"
+  ARCHER-SPEED: "&a&lSpeed&f: &e"
+  ARCHER-JUMP: "&a&lJump&f: &e"
+  #######################  ROGUE CLASS  #######################
+  ROGUE: "&a&lActive Class&f: &eRogue"
+  ROGUE-SPEED: "&a&lSpeed&f: &e"
+  ROGUE-JUMP: "&a&lJump&f: &e"
+  #######################  MINER CLASS  #######################
+  MINER: "&a&lActive Class&7: &eMiner"
+  MINER-DIAMONDS: " &f» &b&lDiamonds&f: &e"
+  ##########################  FROZEN  #########################
+  FROZEN:
+    - "&f\u2588\u2588\u2588\u2588&c\u2588&f\u2588\u2588\u2588\u2588"
+    - "&f\u2588\u2588\u2588&c\u2588&6\u2588&c\u2588&f\u2588\u2588\u2588"
+    - "&f\u2588\u2588&c\u2588&6\u2588&0\u2588&6\u2588&c\u2588&f\u2588\u2588"
+    - "&f\u2588\u2588&c\u2588&6\u2588&0\u2588&6\u2588&c\u2588&f\u2588\u2588"
+    - "&f\u2588\u2588&c\u2588&6\u2588&0\u2588&6\u2588&c\u2588&f\u2588\u2588"
+    - "&f\u2588&c\u2588&6\u2588\u2588&0\u2588&6\u2588\u2588&c\u2588&f\u2588"
+    - "&f\u2588&c\u2588&6\u2588\u2588\u2588\u2588\u2588&c\u2588&f\u2588"
+    - "&c\u2588&6\u2588\u2588\u2588&0\u2588&6\u2588\u2588\u2588&c\u2588"
+    - "&c\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588"
+    - ""
+    - "&4&lYOU ARE FROZEN!"
+    - "&cJoin our TeamSpeak 3"
+  FROZEN-TEAMSPEAK: "&ets.revampmc.eu"
+  ########################  STAFFMODE  ########################
+  STAFFMODE: "&b&lStaff Mode"
+  VANISH: " &7» &aVanish&7:"
+  CHAT-LOCKED: " &7» &aChat&7: &cLocked"
+  CHAT-UNLOCKED: " &7» &aChat&7: &aUnlocked"
+  CHAT-SLOWED: " &7» &aChat&7: &dSlowed"
+  TPS: " &7» &aTPS&7: &c"
+  #############################################################

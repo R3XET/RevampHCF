@@ -1,0 +1,1131 @@
+#  ██████╗ ███████╗███████╗████████╗    ██╗  ██╗ ██████╗███████╗     ██████╗ ██████╗ ██████╗ ███████╗
+#  ██╔══██╗██╔════╝██╔════╝╚══██╔══╝    ██║  ██║██╔════╝██╔════╝    ██╔════╝██╔═══██╗██╔══██╗██╔════╝
+#  ██████╔╝█████╗  ███████╗   ██║       ███████║██║     █████╗      ██║     ██║   ██║██████╔╝█████╗
+#  ██╔══██╗██╔══╝  ╚════██║   ██║       ██╔══██║██║     ██╔══╝      ██║     ██║   ██║██╔══██╗██╔══╝
+#  ██████╔╝███████╗███████║   ██║       ██║  ██║╚██████╗██║         ╚██████╗╚██████╔╝██║  ██║███████╗
+#  ╚═════╝ ╚══════╝╚══════╝   ╚═╝       ╚═╝  ╚═╝ ╚═════╝╚═╝          ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+#
+
+##############################################################
+##                      LICENSE SYSTEM                      ##
+##############################################################
+#PUT HERE YOUR LICENSE KEY! IF YOU DON'T HAVE ONE CONTACT THE AUTHOR ON DISCORD (R3XET#0852) / MC-MARKET (R3XET)
+LICENSE: "XXXX-XXXX-XXXX-XXXX"
+#PUT HERE YOUR LICENSE KEY! IF YOU DON'T HAVE ONE CONTACT THE AUTHOR ON DISCORD (R3XET#0852) / MC-MARKET (R3XET)
+##############################################################
+##                      STARTUP OPTIONS                     ##
+##############################################################
+# What timezone should we use?
+TIMEZONE: "Europe/Rome"
+
+# What date format should we use?
+DATE_FORMAT: "dd.MM HH:mm:ss"
+
+# What data type should we using for storage?
+# You can choose between "MONGO", "JSON", "YAML"
+DATA_TYPE: "YAML"
+
+##############################################################
+##                    SECURITY SECTION                    ##
+##############################################################
+# Should we enable security section?
+
+##############################################################
+##                    STARTUP COMMANDS                    ##
+##############################################################
+# Which commands should we run during server startup?
+STARTUP_COMMANDS:
+- "timings off"
+- "difficulty normal"
+- "gamerule mobGriefing false"
+- "gamerule sendCommandFeedback false"
+- "gamerule logAdminCommands false"
+- "gamerule doDaylightCycle false"
+- "gamerule doMobSpawning false"
+- "gamerule commandBlockOutput false"
+- "time set day"
+##############################################################
+##                         WHITELIST                        ##
+##############################################################
+# What message should we display when a player tries
+# to join the server while is whitelisted?
+WHITELIST_MESSAGE: "&cThis modality is currently under maintenance. Check back soon!"
+##############################################################
+##                         COOLDOWNS                        ##
+##############################################################
+COOLDOWNS:
+  #########################  SECONDS  ##########################
+  APPLE: 5
+  GAPPLE: 3600
+  GOLDEN-HEAD: 15
+  ARCHER_MARK: 10
+  CLASS_WARMUP: 5
+  MALIGNANTEGG: 20
+  ENDERPEARL: 16
+  ULTIMATE-PEARL: 5
+  NEWVIDEO: 300
+  RECORDING: 300
+  LOGOUT: 30
+  HOME: 10
+  SPAWN_TAG: 30
+  #########################  MINUTES  #########################
+  FIRST_PVP_TIMER: 120
+  PVP_TIMER: 60
+  STUCK: 3
+  #########################  BLOCKS  ##########################
+  #The max blocks a player can move while f stucking
+  STUCK_MAX_BLOCKS_MOVE_DISTANCE: 5
+  #############################################################
+
+
+ABILITY:
+  MESSAGE:
+  - "&8&m-------------------------------"
+  - "&a&l* &6&lAbilities &a&l*"
+  - ""
+  - "&2/ability &7- &aGeneral Help command."
+  - "&2/ability give (player) (item) (amount) &7- &aGive a player an ability."
+  - "&2/ability items &7- &aList of all abilities."
+  - "&8&m-------------------------------"
+  LIST:
+  - "&8&m-------------------------------"
+  - "&2&lItems:"
+  - "   - &6&lSwitcher Egg"
+  - "   - &b&lSlowness Snowball"
+  - "   - &6&lBlock Egg"
+  - "   - &2&lThrowWeb"
+  - "   - &b&lUltimate Pearl"
+  - "   - &6&lGrappling Hook"
+  - "   - &2&lPumpkin Swapper"
+  - "   - &e&lNinja"
+  - "   - &b&lStormBreaker"
+  - "   - &e&lPyroBall"
+  - "   - &c&lMalignant Egg"
+  - "   - &f&lFreeze Gun"
+  - "   - &3&lInvisibility Dust"
+  - "   - &d&lSecond Chance"
+  - "   - &5&lBackPack"
+  - "   - &2&lRocket"
+  - "   - &c&lDisarmer Axe"
+  - "&8&m-------------------------------"
+  - "&2&lRaw Items:"
+  - "   - &b&lninja"
+  - "   - &b&lsnowball"
+  - "   - &b&lblockegg"
+  - "   - &b&lswitcheregg"
+  - "   - &b&lgrapplinghook"
+  - "   - &b&lthrowweb"
+  - "   - &b&ldisarmeraxe"
+  - "   - &b&lpumpkinswapper"
+  - "   - &b&lfreezegun"
+  - "   - &b&linvisdust"
+  - "   - &b&lbackpack"
+  - "   - &b&lrocket"
+  - "   - &b&lsecondchance"
+  - "   - &b&lpyroball"
+  - "   - &b&lmalignantegg"
+  - "   - &b&lultimatepearl"
+  - "&8&m-------------------------------"
+
+KIT_HELP_MESSAGE:
+  - "&7&m----*------------( &b&lKit Help &7)----------*----"
+  - "&b/kit create (kitname) &7- Create a kit"
+  - "&b/kit rename (kitname) [newname] &7- Rename a kit"
+  - "&b/kit delete (kitname) &7- Delete a kit"
+  - "&b/kit disable (kitname) &7- Disable a kit"
+  - "&b/kit gui &7- Show all the kits in a GUI"
+  - "&b/kit list &7- Shows all the kits in chat"
+  - "&b/kit preview (kitname) &7- Shows a kit preview"
+  - "&b/kit setdelay (kitname) [delay] &7- Set a kit delay"
+  - "&b/kit setdescription (kitname) [description] &7- Set a kit description [none|description]"
+  - "&b/kit setimage (kitname) &7- Set kit icon by holding in the hand"
+  - "&b/kit setindex (kitname) [index] &7- Set kit sorting [0 = minimum]"
+  - "&b/kit setitems (kitname) &7- Set kit inventory"
+  - "&b/kit setmaxuses (kitname) [uses] &7- Set kit max usages [number|unlimited]"
+  - "&b/kit setminplaytime (kitname) [time] &7- Set minimum playtime needed to use a kit"
+  - "&7&m----*---------------------------------------------*----"
+
+WILDERNESS: "&2Wilderness"
+
+CHAT:
+  FACTIONLESS: "&c-"
+##############################################################
+##                        DATA SAVING                       ##
+##############################################################
+SAVE:
+  SAVING: "&b&lRevampMC &8&l» &a&l&oSaving..."
+  SUCCESSFULLY: "&b&lRevampMC &8&l» &a&l&oSuccessfully Saved."
+  # MINUTES
+  INTERVAL: 5
+##############################################################
+##                        RECLAIMS                          ##
+##############################################################
+Reclaims:
+  Cobalt:
+    rankname: 'Cobalt'
+    commands:
+      - 'bcraw &b&lReclaim &7➥ &b&l%player% &a&lredeemed their &a&l%rank%&a&l packages using &a&l/reclaim'
+      - 'cr givekey %player% killreward 5'
+##############################################################
+##                        SETTINGS                          ##
+##############################################################
+# Should we hide players at spawn?
+HIDE_PLAYERS_AT_SPAWN: false
+
+# Maximum range within a player is visible
+HIDE-PLAYERS-RANGE: 58
+
+# Ticks between hits
+HIT_DETECTION: 18
+
+# Should we allow item pickup while pvptimer is active?
+ALLOW_ITEM_PICKUP_PVPTIMER: true
+
+#Restore instantly player's health after death?
+NO-CLEAN: false
+
+# Do you want to display chat prefixes?
+USE-CHAT-PREFIXES: true
+
+# Should we enable pearls in event zones?
+PEARLS_IN_EVENT_ENABLED: true
+
+# Should we enable beds?
+BEDS_ENABLED: false
+
+# Should we enable bed bombing?
+BED_BOMBING_ENABLED: false
+
+# Should we enable enderchest opening in HCF mode?
+ENDERCHEST_HCF_ENABLED: true
+
+# Should we allow book disenchant on enchanting table right click?
+BOOK_DISENCHANT_ENABLED: true
+
+# Should we enable death signs?
+DEATH_SIGNS_ENABLED: true
+
+# Should we enable anti phase shovel module?
+ANTI_PHASE_SHOVEL_ENABLED: true
+
+# Should we block illegal enchants like sharpness 6, knockback 6?
+ILLEGAL_ENCHANT_CHECKER_ENABLED: true
+
+# Should we enable anti pot lag?
+ANTI_POTLAG_ENABLED: true
+
+# Should we enable armor durability fix?
+ARMOR_DURABILITY_FIX_ENABLED: true
+
+# Should we enable normal creature spawn?
+MONSTER_SPAWN_ENABLED: false
+
+# Should we allow people to disable portals on click to prevent portal traps?
+ANTI_PORTAL_TRAP_ENABLED: true
+
+# Should we prevent non trusted people to use creative?
+ANTI_CREATIVE_BYPASS_ENABLED: true
+
+# Should we prevent people to place blocks to bug abuse and escape from traps?
+ANTI_BLOCK_JUMP_ENABLED: true
+
+# Should we prevent people to hit other people behind blocks when they break blocks?
+ANTI_BLOCK_HIT_ENABLED: true
+
+# Should we allow people to claim on roads?
+CLAIMING_ON_ROADS_ENABLED: false
+
+# Should we enable obsidian generators?
+OBSIDIAN_GENERATORS_ENABLED: false
+
+# Should we allow spawners break in end or nether?
+SPAWNER_BREAK_ENABLED:
+  IN_END: false
+  IN_NETHER: false
+
+# Should we allow spawners place in end or nether?
+SPAWNER_PLACE_ENABLED:
+  IN_END: false
+  IN_NETHER: false
+
+
+# Item with this lore will be unrepairable
+UNREPAIRABLE_ITEM_LORE: "&cUnrepairable"
+
+##############################################################
+##                      WANDS SETTINGS                      ##
+##############################################################
+
+# Claim wand configuration
+CLAIM_WAND:
+  MATERIAL: "WOOD_HOE"
+  NAME: "&c&oClaim Wand"
+  LORE:
+    - "&eLeft Or Right Click &6Block to set the"
+    - "&c- &7Select claim's corners"
+    - ""
+    - "&eDrop the &6Hoe"
+    - "&c- &7Cancel current claim"
+    - ""
+    - "&3Crouch &eLeft Click &6Block/Air"
+    - ""
+    - "&c- &7Purchase current claim"
+
+#TODO UNUSED
+# Selection wand configuration
+SELECTION_WAND:
+  MATERIAL_ID: "294:0"
+  NAME: "&cSelection Wand"
+  LORE:
+    - "&7Left click to set &afirst &7position"
+    - "&7Right click to set &asecond &7position"
+
+
+#TODO UNUSED
+CROWBAR:
+  # What crowbar name should we use?
+  NAME: "&3&lCrowbar"
+  # What crowbar lore should we use?
+  LORE:
+    - "&5Spawners: &a{&c<scount>&a}"
+    - "&5Portals: &a{&c<pcount>&a}"
+  # Crowbar spawner uses before it breaks
+  SPAWNER_USES: 1
+  # Crowbar portal uses before it breaks
+  PORTAL_USES: 6
+  # What color should be spawner name
+  SPAWNER_NAME_COLOR: "&a&l"
+
+##############################################################
+##                ENDER DRAGON EGG SETTINGS                 ##
+##############################################################
+
+# Configuration for ender dragon event
+ENDER_DRAGON_EGG:
+  # Ender dragon egg material
+  MATERIAL: "DRAGON_EGG"
+  # Ender dragon egg name
+  NAME: "&5Ender Dragon Egg"
+  # Ender dragon egg lore
+  LORE:
+    - "&7Congratulations to &b%player%&7"
+    - "&7Faction: &6%faction%"
+  DROPPED_MESSAGE: "&eDragon Egg has been dropped in your location."
+  ADDED_MESSAGE: "&aDragon Egg has been added to your inventory!"
+  KILLED_MESSAGE: "&5EnderDragon &ewas slain by &c%player% &7(%faction%)"
+
+
+##############################################################
+##                     ECONOMY SETTINGS                     ##
+##############################################################
+
+# Max balance for players
+MAX_BALANCE: 1000000 #TODO UNUSED
+
+# Default economy balances
+STARTING_BALANCE:
+  PLAYER: 200
+  FACTION: 0 #TODO UNUSED
+
+  #TODO UNUSED
+# Buy signs configuration
+BUY_SIGN:
+  LINES:
+    - "&a[Buy]"
+    - "<material>"
+    - "<amount>"
+    - "$<price>"
+  #TODO UNUSED
+# Sell signs configuration
+SELL_SIGN:
+  LINES:
+    - "&c[Sell]"
+    - "<material>"
+    - "<amount>"
+    - "$<price>"
+
+
+##############################################################
+##                    XP BOTTLE SETTINGS                    ##
+##############################################################
+#TODO farlo anche on death
+XP_BOTTLE:
+  # Should we drop player exp on death?
+  DROP_ON_DEATH: true
+  # Exp bottle title
+  NAME: "&b&lExp Bottle"
+  # Exp bottle lore
+  LORE:
+    - "&bContains: &7%levels% exp levels."
+    - "&bSo it contains: &7%points% exp points."
+    - "&bRight click to receive exp."
+  NO_XP_ERROR_MESSAGE: "&cYou don't have any exp to bottle."
+
+##############################################################
+##              GLOWSTONE MOUNTAIN SETTINGS                 ##
+##############################################################
+
+# Glowstone mountain reset time in minutes
+GLOWSTONE_MOUNTAIN_RESET_TIME: 60
+
+##############################################################
+##                     SPEED SETTINGS                       ##
+##############################################################
+# Brewer speed ticks
+BREWER-SPEED: 2
+
+# Furnace speed ticks
+FURNACE-SPEED: 3
+
+# Potion speed ticks
+POTIONS-SPEED: 1.3
+
+##############################################################
+##                       KITMAP MODE                        ##
+##############################################################
+#Enable kitmap mode?
+KITMAP_MODE_ENABLED: false
+
+# Should we disable building in kitmap mode?
+DISABLE_KITMAP_BUILDING: false # //TODO UNUSED
+
+#Commands to run when a player kill another player in kitmap mode
+KITMAP-KILLREWARD:
+- "cr givekey %player% KillReward 1"
+
+##############################################################
+##                    ACTIONS IN COMBAT                     ##
+##############################################################
+#Enable enderchest opening in combat?
+ENDERCHEST_COMMAND_IN_COMBAT_ENABLED: true
+
+#Enable /f open in combat?
+F_OPEN_IN_COMBAT_ENABLED: false
+
+#Allow block placing in combat?
+PLACE_BLOCKS_IN_COMBAT_ENABLED: true
+
+#Allow block breaking in combat?
+BREAK_BLOCK_IN_COMBAT_ENABLED: true
+
+#TODO UNUSED
+  # What commands should we disable during combat tag?
+DISABLED_COMMANDS:
+  - "/f home"
+  - "/fhome"
+  - "/f stuck"
+  - "/fstuck"
+  - "/logout"
+
+##############################################################
+##                      FACTIONS POINTS                     ##
+##############################################################
+POINTS:
+  #Points lost after death
+  LOSS-PER-DEATH: 1
+
+  #Points lost after kill
+  WIN-PER-KILL: 1
+
+  #Points lost after capping king of the hill
+  WIN-PER-KOTH: 3
+
+  #Points lost after capping conquest
+  WIN-PER-CONQUEST: 5
+
+##############################################################
+##                       KITMAP ENCHANTS                    ##
+##############################################################
+KITS:
+  PROTECTION: 2
+  SHARPNESS: 3
+  POWER: 4
+  FLAME: 1
+  INFINITE: 1
+  FEATHER_FALLING: 3
+  UNBREAKING: 3
+  EFFICIENCY: 4
+##############################################################
+##                    EXPERIENCE SETTINGS                   ##
+##############################################################
+EXP:
+  GLOBAL: 2.0
+  FISHING: 2.0
+  SMELTING: 2.0
+  LOOTING: 1.5
+  LUCK: 1.5
+  FORTUNE: 1.5
+##############################################################
+##                  BLOCKED FACTIONS NAMES                  ##
+##############################################################
+#Blacklist factions names you don't want. People cannot create a faction if the faction name is in this list
+BLOCKED-FACTIONS-NAMES:
+- "nigga"
+- "shit"
+- "niggar"
+- "nigger"
+- "eotw"
+- "retard"
+- "gay"
+##############################################################
+##                         CLASSES                          ##
+##############################################################
+# Message that is displayed when a player equips an HCF class
+EQUIP-MESSAGE: "&a&l» &eClass &6%class% &eis now &aEnabled!"
+
+# Message that is displayed when a player unequips an HCF class
+UNEQUIP-MESSAGE: "&a&l» &eClass &6%class% &eis now &cDisabled!"
+##############################################################
+##                        RANGER CLASS                      ##
+##############################################################
+RANGER:
+  #Enable ranger class?
+  ENABLED: true
+
+  #Class name
+  NAME: "Ranger"
+
+  #Enable class warmup?
+  WARMUP-ENABLED: true
+
+  #SECONDS
+  WARMUP-TIME: 5s
+
+  #SECONDS
+  STRENGTH-COOLDOWN: 90s
+
+  #Ranger strength level
+  STRENGTH-LEVEL: 3
+
+  #SECONDS
+  DEMON-COOLDOWN: 45s
+
+  #SECONDS
+  DEMON-TIME: 10s
+
+  #SECONDS
+  FIRE-COOLDOWN: 60s
+
+  #Amplifier
+  FIRE-LEVEL: 2
+
+##############################################################
+##                      ARCHER CLASS                        ##
+##############################################################
+ARCHER:
+  #Enable archer class?
+  ENABLED: true
+
+  #Class name
+  NAME: "Archer"
+
+  #Enable class warmup?
+  WARMUP-ENABLED: true
+
+  #SECONDS
+  WARMUP-TIME: 5s
+
+  #SECONDS
+  SPEED-COOLDOWN: 30s
+
+  #Amplifier
+  SPEED-LEVEL: 3
+
+  #SECONDS
+  JUMP-COOLDOWN: 30s
+
+  #Amplifier
+  JUMP-LEVEL: 7
+
+##############################################################
+##                       BARD CLASS                         ##
+##############################################################
+BARD:
+  #Enable bard class?
+  ENABLED: true
+
+  #Class name
+  NAME: "Bard"
+
+  #Enable class warmup?
+  WARMUP-ENABLED: true
+
+  #SECONDS
+  WARMUP-TIME: 5s
+
+  #SECONDS
+  BUFF-COOLDOWN: 10s
+
+  #BLOCKS
+  TEAMMATE_NEARBY_RADIUS: 25
+
+  #Max energy that the bard can have
+  MAX-ENERGY: 120
+
+##############################################################
+##                       MINER CLASS                        ##
+##############################################################
+MINER:
+  #Enable miner class?
+  ENABLED: true
+
+  #Class name
+  NAME: "Miner"
+
+  #Enable class warmup?
+  WARMUP-ENABLED: true
+
+  #SECONDS
+  WARMUP-TIME: 5s
+
+  #BLOCKS
+  INVIS-Y-LEVEL: 20
+
+##############################################################
+##                        ROGUE  CLASS                      ##
+##############################################################
+ROGUE:
+  #Enable rogue class?
+  ENABLED: true
+
+  #Class name
+  NAME: "Rogue"
+
+  #Enable class warmup?
+  WARMUP-ENABLED: true
+
+  #SECONDS
+  WARMUP-TIME: 5s
+
+  #SECONDS
+  SPEED-COOLDOWN: 30s
+
+  #Amplifier
+  SPEED-LEVEL: 3
+
+  #SECONDS
+  JUMP-COOLDOWN: 30s
+
+  #Amplifier
+  JUMP-LEVEL: 7
+
+##############################################################
+##                        MOB STACKER                       ##
+##############################################################
+#Which entities should the mobstacker compact?
+STACKING-ENTITY:
+- "ZOMBIE"
+- "SKELETON"
+- "SPIDER"
+- "CAVE_SPIDER"
+- "COW"
+- "PIG"
+- "SHEEP"
+- "CHICKEN"
+- "CREEPER"
+- "BLAZE"
+# Click here for the list of all entities -> https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+##############################################################
+##                     FACTIONS SETTINGS                    ##
+##############################################################
+FACTIONS-SETTINGS:
+
+  #Minimum faction name length
+  MIN-NAME: 3
+
+  #Maximum faction name length
+  MAX-NAME: 16
+
+  #Maxium factions members
+  MAX-MEMBERS: 5
+
+  #Maximum factions allies
+  MAX-ALLIES: 0
+
+  #Multipler
+  DTRLOSSMULTIPLIER: 1.0
+
+  #Multipler
+  DEATHBANMULTIPLIER: 1.0
+
+  # Enable block break in warzone after
+  BUILDABLE-AT: 300
+
+  #HOURS
+  MAX-DTR-REGEN: 3
+
+  #BLOCKS
+  WARZONE-RADIUS: 1000
+
+  #CLAIMS
+  MAX-CLAIMS-PER-FAC: 2
+
+  # MINUTES
+  DTR-REGEN-TIME: 45
+
+  #MILLISECONDS
+  DTR-UPDATE: 45000
+
+  #Multipler
+  DTR-INCREMENT: 0.1
+
+  #Max faction dtr
+  MAX-DTR: 6.5
+
+  #BLOCKS
+  ROAD-MIN-HEIGHT: 0
+
+  #BLOCKS
+  ROAD-MAX-HEIGHT: 256
+
+##############################################################
+##                      DEATHBAN TIMES                      ##
+##############################################################
+
+DEATHBAN:
+  # Should we deathban players upon death?
+  ENABLED: true
+  # What should be default deathban time in minutes?
+  DEFAULT_BAN_TIME: 120m
+  # Deathban times represented by time and permission
+  BAN_TIMES:
+    1:
+      RANK_NAME: Default
+      TIME: 120m
+    2:
+      RANK_NAME: Silver
+      TIME: 90m
+    3:
+      RANK_NAME: Gold
+      TIME: 75m
+    4:
+      RANK_NAME: Platinum
+      TIME: 60m
+    5:
+      RANK_NAME: Emerald
+      TIME: 40m
+    6:
+      RANK_NAME: Diamond
+      TIME: 30m
+
+# Default amount of lives player receives on map start
+DEFAULT_LIVES: 0
+
+
+##############################################################
+##                      FACTIONS COLORS                     ##
+##############################################################
+TEAMMATE_COLOR: GREEN
+ALLY_COLOR: LIGHT_PURPLE
+CAPTAIN_COLOR: BLUE
+ENEMY_COLOR: RED
+SPAWN_COLOR: GREEN
+ROAD_COLOR: GOLD
+WARZONE_COLOR: RED
+WILDERNESS_COLOR: GRAY
+# Click here for the list of all colors -> https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html
+##############################################################
+##                 FACTIONS SUBCLAIM SETTINGS               ##
+##############################################################
+SUBCLAIMS:
+  #Minimum subclaim length
+  MIN-NAME: 3
+
+  #Maximum subclaim length
+  MAX-NAME: 16
+
+##############################################################
+  ##                    WORLDS BORDERS                      ##
+##############################################################
+BORDER:
+  #Overworld border
+  OverWorld: 3000
+
+  #Nether border
+  Nether: 2000
+
+  #End border
+  End: 1500
+
+##############################################################
+##                       EVENTS SETTINGS                    ##
+##############################################################
+  #SECONDS
+TIME-BETWEEN-STARTS: 15
+
+##############################################################
+##                      KOTH EVENT                          ##
+##############################################################
+KOTH:
+  #Commands to run when player a finishes koth capping
+  WINNER-PRIZE:
+  - "cr givekey %player% KOTH 3"
+
+  #KoTH start message
+  START-MESSAGE: "&eKoTH &d%name%"
+
+KOTH_CAPPED_SIGN:
+  # Should we enable koth capped sign?
+  ENABLED: true
+  # Koth capped sign name
+  NAME: "&6KoTH Cap Sign"
+  # Koth capped sign lore
+  LORE:
+    - "&3<koth>"
+    - "&ecapped by"
+    - "&3<capper>"
+    - "<date>"
+
+##############################################################
+##                    CONQUEST EVENT                        ##
+##############################################################
+CONQUEST:
+  #Commands to run when player a finishes conquest capping
+  WINNER-PRIZE:
+  - "cr givekey %ign% CONQUEST 3"
+
+  #Conquest start message
+  START-MESSAGE: "&eConquest &d%name%"
+
+  #Message to display after win
+  WIN-MESSAGE: ""
+
+  #Points loss after death
+  DEATH-LOSS: 20
+
+  #Points gained after win
+  WIN-POINTS: 300
+
+##############################################################
+##                         GOLDEN HEAD                      ##
+##############################################################
+GOLDEN-HEAD:
+  #Format --> POTION_EFFECT:DURATION:AMPLIFIER
+  EFFECTS:
+    - ABSORPTION:120:1
+    - REGENERATION:20:2
+  #List of all potion effects --> https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+
+##############################################################
+##                          F.A.Q.                          ##
+##############################################################
+FAQ:
+  # The messages that appear once the player runs the command. You can add as many lines below as you want
+  QUESTIONS:
+    PREFIX:
+      1: " "
+      2: " "
+      3: "&8&m--------------(&b FAQ &8)&8&m--------------"
+    QUESTIONS:
+      1: "&8[&b1&8] &7How do I start a faction?"
+      2: "&8[&b2&8] &7How do I invite people to my faction?"
+      3: "&8[&b3&8] &7How do I disband my faction?"
+      4: "&8[&b4&8] &7What is the website link?"
+      5: "&8[&b5&8] &7What is the discord link?"
+      6: "&8[&b6&8] &7What happens when 50 votes are hit?"
+      7: "&8[&b7&8] &7How do I vote?"
+      8: "&8[&b8&8] &7How do I play HCF?"
+      9: "&8[&b9&8] &7How do I claim land?"
+    SUFFIX:
+      1: "&8&m-----------------------------------"
+      2: " "
+    # The message that appears when you hover a question
+    HOVER:
+      1: "&bClick me for the answer to &7[&b1&7]"
+      2: "&bClick me for the answer to &7[&b2&7]"
+      3: "&bClick me for the answer to &7[&b3&7]"
+      4: "&bClick me for the answer to &7[&b4&7]"
+      5: "&bClick me for the answer to &7[&b5&7]"
+      6: "&bClick me for the answer to &7[&b6&7]"
+      7: "&bClick me for the answer to &7[&b7&7]"
+      8: "&bClick me for the answer to &7[&b8&7]"
+      9: "&bClick me for the answer to &7[&b9&7]"
+  # The answer to the question that a player clicks on
+  ANSWERS:
+    PREFIX:
+      1: " "
+      2: " "
+      3: "&8&m------------------------(&b FAQ &8)&8&m-----------------------"
+    ANSWERS:
+      1: " &7Running &b/f &7will create a faction."
+      2: " &7Running &b/f invite &7will invite people to your faction."
+      3: " &7Running &b/f disband &7will disband your faction."
+      4: " &7The server's website is &bwww.revampmc.eu"
+      5: " &7The server's discord IP is &bdiscord.revampmc.eu"
+      6: " &7Everyone online the server will receive a random reward!"
+      7: " &7Run &b/vote &7and &bvote &7on the links to receive rewards."
+      8: " &7Follow this guide: https://www.badlion.net/forum/thread/107727?page=1."
+      9: " &7Running &b/f claim &7will give you the &bClaming Wand&7!"
+    SUFFIX:
+      1: "&8&m-----------------------------------------------------"
+      2: " "
+
+##############################################################
+##                      ENCHANT BOOKS                       ##
+##############################################################
+
+SPEED:
+  NAME: "&3&l- &b&lSPEED Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nSpeed&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nBOOTS&r&3 To Apply Enchantment!"
+FIRE:
+  NAME: "&3&l- &b&lFIRE Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nFire Res&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nLEGGINGS&r&3 To Apply Enchantment!"
+STRENGTH:
+  NAME: "&3&l- &b&lSTRENGTH Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nStrength&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nCHESTPLATE&r&3 To Apply Enchantment!"
+JUMP:
+  NAME: "&3&l- &b&lJUMP Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nJump Boost&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nBOOTS&r&3 To Apply Enchantment!"
+WATERBREATHING:
+  NAME: "&3&l- &b&lWATERBREATHING Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nWater Breathing&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nHELMET&r&3 To Apply Enchantment!"
+HASTE:
+  NAME: "&3&l- &b&lHASTE Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nHaste&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nTOOLS&r&3 To Apply Enchantment!"
+NIGHTVISION:
+  NAME: "&3&l- &b&lNIGHT VISION Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Gives Players Permanent &b&nNight Vision&3 Effect!"
+    - ""
+    - "  &b&l- &3Click On &b&nHELMET&r&3 To Apply Enchantment!"
+IMPLANTS:
+  NAME: "&3&l- &b&lIMPLANTS Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Allows Players To Not Lose &b&nHunger"
+    - ""
+    - "  &b&l- &3Click On &b&nHELMET&r&3 To Apply Enchantment!"
+SMELT:
+  NAME: "&3&l- &b&lSMELT Enchantment Star &3&l-"
+  LORE:
+    - "  &b&l- &3Allows Players To &b&nAuto Smelt&r&3 Ores On Mine"
+    - ""
+    - "  &b&l- &3Click On &b&nTOOLS&r&3 To Apply Enchantment!"
+
+##############################################################
+##                        ENCHANT GUI                       ##
+##############################################################
+
+ENCHANT-GUI-NAME: "&4&lRevampMC Enchants"
+
+# You can choose between blue and red
+ENCHANT-GUI-GLASS-COLOR: "BLUE"
+
+ENCHANTS:
+  SPEED:
+    LEVEL: 30
+    NAME: "&3&l- &b&lSPEED Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nBOOTS&r&3 To Apply Enchantment!"
+  FIRE:
+    LEVEL: 30
+    NAME: "&3&l- &b&lFIRE Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nLEGGINGS&r&3 To Apply Enchantment!"
+  STRENGTH:
+    LEVEL: 30
+    NAME: "&3&l- &b&lSTRENGTH Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nCHESTPLATE&r&3 To Apply Enchantment!"
+  JUMP:
+    LEVEL: 30
+    NAME: "&3&l- &b&lJUMP Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nBOOTS&r&3 To Apply Enchantment!"
+  WATERBREATHING:
+    LEVEL: 30
+    NAME: "&3&l- &b&lWATERBREATHING Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nHELMET&r&3 To Apply Enchantment!"
+  HASTE:
+    LEVEL: 30
+    NAME: "&3&l- &b&lHASTE Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nTOOLS&r&3 To Apply Enchantment!"
+  NIGHTVISION:
+    LEVEL: 30
+    NAME: "&3&l- &b&lNIGHT VISION Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nHELMET&r&3 To Apply Enchantment!"
+  IMPLANTS:
+    LEVEL: 30
+    NAME: "&3&l- &b&lIMPLANTS Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nHELMET&r&3 To Apply Enchantment!"
+  SMELT:
+    LEVEL: 30
+    NAME: "&3&l- &b&lSMELT Enchantment Star &3&l-"
+    LORE:
+      - "  &b&l- &b&n30 Levels&r &3 To Purchase This Star!"
+      - ""
+      - "  &b&l- &3Click On &b&nTOOLS&r&3 To Apply Enchantment!"
+  GLASS:
+    NAME: "&3&l- &b&lENCHANTER -"
+    LORE:
+      - ""
+
+##############################################################
+##                          DISGUISE                        ##
+##############################################################
+disguises:
+  creeper:
+    name: "&aCreeper"
+    lore: "&7Disguise as a &aCreeper"
+    owner: "MHF_Creeper"
+    perm: "revamphcf.disguise.creeper"
+  skeleton:
+    name: "&fSkeleton"
+    lore: "&7Disguise as a &fSkeleton"
+    owner: "MHF_Skeleton"
+    perm: "revamphcf.disguise.skeleton"
+  spider:
+    name: "&cSpider"
+    lore: "&7Disguise as a &cSpider"
+    owner: "MHF_Spider"
+    perm: "revamphcf.disguise.spider"
+  zombie:
+    name: "&2Zombie"
+    lore: "&7Disguise as a &2Zombie"
+    owner: "MHF_Zombie"
+    perm: "revamphcf.disguise.zombie"
+  slime:
+    name: "&aSlime"
+    lore: "&7Disguise as a &aSlime"
+    owner: "MHF_Slime"
+    perm: "revamphcf.disguise.slime"
+  enderman:
+    name: "&5Enderman"
+    lore: "&7Disguise as a &5Enderman"
+    owner: "MHF_Enderman"
+    perm: "revamphcf.disguise.enderman"
+  silverfish:
+    name: "&3Silverfish"
+    lore: "&7Disguise as a &3Silverfish"
+    owner: "MHF_Silverfish"
+    perm: "revamphcf.disguise.silverfish"
+  blaze:
+    name: "&6Blaze"
+    lore: "&7Disguise as a &6Blaze"
+    owner: "MHF_Blaze"
+    perm: "revamphcf.disguise.blaze"
+  bat:
+    name: "&1Bat"
+    lore: "&7Disguise as a &1Bat"
+    owner: "batman_2009"
+    perm: "revamphcf.disguise.bat"
+  witch:
+    name: "&5Witch"
+    lore: "&7Disguise as a &5Witch"
+    owner: "MHF_Witch"
+    perm: "revamphcf.disguise.witch"
+  endermite:
+    name: "&4Endermite"
+    lore: "&7Disguise as a &4Endermite"
+    owner: "MHF_Endermite"
+    perm: "revamphcf.disguise.endermite"
+  pig:
+    name: "&dPig"
+    lore: "&7Disguise as a &dPig"
+    owner: "MHF_Pig"
+    perm: "revamphcf.disguise.pig"
+  sheep:
+    name: "&fSheep"
+    lore: "&7Disguise as a &fSheep"
+    owner: "MHF_Sheep"
+    perm: "revamphcf.disguise.sheep"
+  cow:
+    name: "&9Cow"
+    lore: "&7Disguise as a &9Cow"
+    owner: "MHF_Cow"
+    perm: "revamphcf.disguise.cow"
+  chicken:
+    name: "&cChicken"
+    lore: "&7Disguise as a &cChicken"
+    owner: "MHF_Chicken"
+    perm: "revamphcf.disguise.chicken"
+  squid:
+    name: "&bSquid"
+    lore: "&7Disguise as a &bSquid"
+    owner: "MHF_Squid"
+    perm: "revamphcf.disguise.squid"
+  wolf:
+    name: "&eWolf"
+    lore: "&7Disguise as a &eWolf"
+    owner: "MHF_Wolf"
+    perm: "revamphcf.disguise.wolf"
+  ocelot:
+    name: "&4Ocelot"
+    lore: "&7Disguise as a &4Ocelot"
+    owner: "MHF_Ocelot"
+    perm: "revamphcf.disguise.ocelot"
+  horse:
+    name: "&eHorse"
+    lore: "&7Disguise as a &eHorse"
+    owner: "MHF_Horse"
+    perm: "revamphcf.disguise.horse"
+  rabbit:
+    name: "&2Rabbit"
+    lore: "&7Disguise as a &2Rabbit"
+    owner: "Sulleyy"
+    perm: "revamphcf.disguise.rabbit"
+  villager:
+    name: "&3Villager"
+    lore: "&7Disguise as a &3Villager"
+    owner: "MHF_Villager"
+    perm: "revamphcf.disguise.villager"
+
+DISGUISE_SETTINGS:
+  BLOW-TIME: 30
+  DISGUISE_MESSAGE: "&7You have been disguised as a &b%disguise%"
+  DISGUISE_BROKEN: "&7Your disguise has been broken"
+  # SECONDS
+  COOLDOWN: 10
+  COOLDOWN_MESSAGE: "&cYou can't use this for another %time% seconds"
+
+
+#############################################################
+
+
+#   ▄▄▄▄   ▓█████   ██████ ▄▄▄█████▓    ██░ ██  ▄████▄    █████▒    ▄████▄   ▒█████   ██▀███  ▓█████
+#  ▓█████▄ ▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒   ▓██░ ██▒▒██▀ ▀█  ▓██   ▒    ▒██▀ ▀█  ▒██▒  ██▒▓██ ▒ ██▒▓█   ▀
+#  ▒██▒ ▄██▒███   ░ ▓██▄   ▒ ▓██░ ▒░   ▒██▀▀██░▒▓█    ▄ ▒████ ░    ▒▓█    ▄ ▒██░  ██▒▓██ ░▄█ ▒▒███
+#  ▒██░█▀  ▒▓█  ▄   ▒   ██▒░ ▓██▓ ░    ░▓█ ░██ ▒▓▓▄ ▄██▒░▓█▒  ░    ▒▓▓▄ ▄██▒▒██   ██░▒██▀▀█▄  ▒▓█  ▄
+#  ░▓█  ▀█▓░▒████▒▒██████▒▒  ▒██▒ ░    ░▓█▒░██▓▒ ▓███▀ ░░▒█░       ▒ ▓███▀ ░░ ████▓▒░░██▓ ▒██▒░▒████▒
+#  ░▒▓███▀▒░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░       ▒ ░░▒░▒░ ░▒ ▒  ░ ▒ ░       ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒▓ ░▒▓░░░ ▒░ ░
+#  ▒░▒   ░  ░ ░  ░░ ░▒  ░ ░    ░        ▒ ░▒░ ░  ░  ▒    ░           ░  ▒     ░ ▒ ▒░   ░▒ ░ ▒░ ░ ░  ░
+#   ░    ░    ░   ░  ░  ░    ░          ░  ░░ ░░         ░ ░       ░        ░ ░ ░ ▒    ░░   ░    ░
+#   ░         ░  ░      ░               ░  ░  ░░ ░                 ░ ░          ░ ░     ░        ░  ░
+#        ░                                     ░                   ░                                 #        ░

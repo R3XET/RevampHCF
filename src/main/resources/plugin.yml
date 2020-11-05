@@ -1,0 +1,361 @@
+name: RevampHCF
+main: eu.revamp.hcf.RevampHCF
+version: "1.0"
+description: RevampMC Custom Factions Core.
+author: R3XET
+depend: [ProtocolLib, RevampPackages, WorldEdit, RevampSystem]
+commands:
+   vote:
+     permission: "revamphcf.command.vote"
+     description: Vote command
+     aliases: [votelink]
+   position:
+     permission: "revamphcf.command.position"
+     description: loc command
+     aliases: [loc, location]
+   hat:
+     permission: "revamphcf.command.hat"
+     description: Hat command
+     aliases: []
+   ptime:
+     permission: "revamphcf.command.ptime"
+     description: ptime command
+     aliases: [playertime]
+   lff:
+     permission: "revamphcf.command.lff"
+     description: lff command
+     aliases: [lookingforfac, lookingforfaction, lft, lookingforteam]
+   stopevent:
+     permission: "*"
+     description: start event command
+     aliases: [eventstop]
+   startevent:
+     permission: "*"
+     description: start event command
+     aliases: [eventstart]
+   keysale:
+     permission: "*"
+     description: keysale command
+     aliases: [ksale]
+   near:
+     permission: "revamphcf.command.near"
+     description: near command
+     aliases: [nearby]
+   checkdeathban:
+     permission: "revamphcf.staff"
+     description: checkdeathban command
+     aliases: [checkdb]
+   inv:
+     permission: "revamphcf.rollback"
+     description: inv command
+     aliases: [staffrefund, rollbackinv, rollbackinventory]
+   staffrevive:
+     permission: "revamphcf.revive"
+     description: staffrevive command
+     aliases: [srevive, modrevive]
+   resetstats:
+     permission: "*"
+     description: resetstats command
+     aliases: [statsreset, resetstatistics, statisticsreset, restorestats]
+   revamp:
+     permission: "revamphcf.revive.revamp"
+     description: Revamp command
+     aliases: [rrevive]
+   servertime:
+     permission: "revamphcf.staff"
+     description: EST Time command
+     aliases: [uptime, srvtime, esthour, est]
+   fight:
+     permission: "revamphcf.command.fight"
+     description: Fight command
+     aliases: []
+   youtuber:
+     permission: "revamphcf.command.youtuber"
+     description: youtuber Command
+     aliases: [yt, youtube]
+   famous:
+     permission: "revamphcf.command.famous"
+     description: famous Command
+     aliases: []
+   partner:
+     permission: "revamphcf.command.partner"
+     description: partner Command
+     aliases: []
+   reboot:
+     permission: "*"
+     description: reboot Command
+     aliases: []
+   endevent:
+     permission: "revamphcf.op"
+     description: endevent Command
+     aliases: [spawnenderdragon, enderevent, enderdragonevent, enderdragon]
+   sale:
+     permission: "*"
+     description: saleoff Command
+     aliases: [saleoff, discount, storediscount, sdiscount]
+   tl:
+     permission: "revamphcf.command.teamlocation"
+     description: sharecoords Command
+     aliases: [factionlocation, fl, teamlocation, teamloc]
+   crowbar:
+     permission: "revamphcf.admin"
+     description: Crowbar Command
+     aliases: []
+   staffjoin:
+     permission: "revamphcf.staff"
+     description: StaffJoin Command
+     aliases: [sj, sjoin, staffj]              
+   tournament:
+     #TODO MISS COMMAND
+     description: Tournament Command
+     aliases: []    
+   portalfreeze:
+     permission: "revamphcf.admin"
+     description: PortalFreeze Command
+     aliases: []                             
+   deathban:
+     permission: "revamphcf.staff"
+     description: Deathban Command   
+     aliases: [db, dban, deathb]     
+   lastdeaths:
+     permission: "revamphcf.staff"
+     description: LastDeaths Command   
+     aliases: [ldeaths, lastd]
+   endportal:
+     permission: "*"
+     description: EndPortal Command   
+     aliases: [lightportal, lighportal]     
+   coords:
+     permission: "revamphcf.command.coords"
+     description: Coords Command   
+     aliases: [coordinates]       
+   eotwffa:
+     permission: "*"
+     description: EOTWFFA Command
+     aliases: [ffa]         
+   help:
+     permission: "revamphcf.command.help"
+     description: Help Command   
+     aliases: ["?"]           
+   hidestaff:
+     permission: "revamphcf.staff"
+     description: HideStaff Command   
+     aliases: [hides, hstaff]          
+   eotw:
+     permission: "*"
+     description: EOTW Command   
+     aliases: []
+   firstjoinitems:
+     permission: "*"
+     description: FirstJoinItems Command   
+     aliases: [fji]
+   glowstone:
+     permission: "*"
+     description: Glowstone Command   
+     aliases: [glow, glowmountain, mountain, glowstonemountain]     
+   koth:
+     permission: "*"
+     description: KoTH Command   
+     aliases: []
+  #TODO
+  #punishfaction:
+  #  description: PunishFaction Command
+  #  aliases: [pfaction, punsihf, fpunish]
+   savedata:
+     permission: "*"
+     description: SaveData Command
+     aliases: [sd]      
+   seen:
+     permission: "revamphcf.staff"
+     description: Seen Command
+     aliases: []  
+   set:
+     permission: "*"
+     description: Set Command
+     aliases: []  
+   setreclaim:
+     permission: "revamphcf.op"
+     description: SetReclaim Command
+     aliases: []  
+   sotw:
+     permission: "*"
+     description: SOTW Command
+     aliases: []
+   balance:
+     permission: "revamphcf.op"
+     description: Balance Command
+     aliases: [bal, eco, economy] 
+   block:
+     permission: "revamphcf.command.block"
+     description: Blcok Command
+     aliases: [cobble, filter, blocks, cobblestone]      
+   bottle:
+     permission: "revamphcf.command.bottle"
+     description: Bottle Command
+     aliases: []      
+   focus:
+     permission: "revamphcf.command.focus"
+     description: Focus Command
+     aliases: []         
+   gapple:
+     permission: "revamphcf.command.gapple"
+     description: Gapple Command
+     aliases: [gopple] 
+   lives:
+     permission: "revamphcf.command.lives"
+     description: Lives Command
+     aliases: [live] 
+   logout:
+     permission: "revamphcf.command.logout"
+     description: Logout Command
+     aliases: [] 
+   mapkit:
+     permission: "revamphcf.command.mapkit"
+     description: MapKit Command
+     aliases: [] 
+   pay:
+     permission: "revamphcf.command.pay"
+     description: Pay Command
+     aliases: [] 
+   pvptimer:
+     permission: "revamphcf.command.pvptimer"
+     description: PvPTimer Command
+     aliases: [prot, pvprot, pvp]
+   timer:
+     permission: "revamphcf.admin"
+     description: Timer Command
+     aliases: [timers]
+   reclaim:
+     permission: "revamphcf.reclaim"
+     description: Reclaim Command
+     aliases: [] 
+   regen:
+     permission: "revamphcf.command.regen"
+     description: Regen Command
+     aliases: []
+   spawn:
+     permission: "revamphcf.command.spawn"
+     description: Spawn Command
+     aliases: []
+   stats:
+     permission: "revamphcf.command.stats"
+     description: Stats Command
+     aliases: [status, ores]
+   toggledeathmessages:
+     permission: "revamphcf.command.toggledeathmessages"
+     description: ToggleDeathMessages Command
+     aliases: [toggledm, tdm]           
+   togglelightning:
+     permission: "revamphcf.command.togglelightning"
+     description: ToggleLightning Command
+     aliases: []      
+   dev:
+     description: SecondLife Command
+     aliases: [core]      
+   faction:
+     description: Faction Command
+     aliases: [f, fac, team, t]
+   playerdistance:
+     permission: "revamphcf.op"
+     description: Set player view distance
+     aliases: [pd]
+   viewdistance:
+     permission: "revamphcf.op"
+     description: Set view distance
+     aliases: [vd]
+   socialspy:
+     permission: "revamphcf.command.socialspy"
+     description: Socialspy Command.
+     aliases: [spy]
+   enderchest:
+     permission: ["revamphcf.command.enderchest", "revamphcf.op"]
+     description: Enderchest Command.
+     aliases: [ec, echest]
+   give:
+     permission: "revamphcf.command.give"
+     description: Give Command.
+     aliases: [i, item]
+   exp:
+     permission: "revamphcf.command.admin"
+     description: Exp Command.
+     aliases: []
+   god:
+     permission: ["revamphcf.admin", "revamphcf.op"]
+     description: God Command.
+     aliases: []
+   kickall:
+     permission: "revamphcf.op"
+     description: Kickall Command.
+     aliases: []
+   killall:
+     permission: "revamphcf.op"
+     description: Killall Command.
+     aliases: []
+   kill:
+     permission: "revamphcf.command.kill"
+     description: Kill Command.
+     aliases: [slay]
+   playtime:
+     permission: "revamphcf.command.playtime"
+     description: Playtime Command.
+     aliases: [pt]
+   spawner:
+     permission: "revamphcf.admin"
+     description: Spawner Command.
+     aliases: []
+   back:
+     permission: "revamphcf.staff"
+     description: Back Command.
+     aliases: []
+   delwarp:
+     permission: "revamphcf.op"
+     description: DelWarp Command.
+     aliases: []
+   setwarp:
+     permission: "revamphcf.op"
+     description: SetWarp Command.
+     aliases: []
+   teleportall:
+     permission: "revamphcf.op"
+     description: Teleportall Command.
+     aliases: [tpall]
+   warp:
+     permission: "revamphcf.staff"
+     description: Warp Command.
+     aliases: [warps]
+   newvideo:
+     permission: "revamphcf.command.newvideo"
+     description: New video Command.
+     aliases: []
+   recording:
+     permission: "revamphcf.command.recording"
+     description: Recording Command.
+     aliases: []
+   kingevent:
+     permission: "*"
+     description: King event Command.
+     aliases: [king]
+   customenchant:
+     permission: "revamphcf.command.customenchant"
+     description: Custom Enchant Command.
+     aliases: [ce, customenchants]
+   answer:
+     permission: "revamphcf.command.answer"
+     description: Answer Command.
+     aliases: []
+   faq:
+     permission: "revamphcf.command.faq"
+     description: F.A.Q. Command.
+     aliases: [question]
+   kit:
+     permission: "revamphcf.command.kit"
+     description: Kit Command
+     aliases: []
+   event:
+     permission: "event.command"
+     description: Event Command
+     aliases: []
+#  - "hcf.protection.admin"
+#  - "revamphcf.netherroof"
+#  - "hcf.staff"
+#  - revamphcf.chat.color
